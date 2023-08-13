@@ -1,0 +1,21 @@
+{
+  "name": "playwright-test-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --headed",
+    "test:chronium": "npx playwright test --config=config/e2e.config.ts --project=chromium --headed",
+    "test:firefox": "npx playwright test --config=config/e2e.config.ts --project=firefox",
+    "test:webkit": "npx playwright test --config=config/e2e.config.ts --project=webkit",
+    "test:all": "npx playwright test --config=config/e2e.config.ts",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "@playwright/test": "^1.33.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
